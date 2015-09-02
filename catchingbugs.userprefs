@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FlyPickup.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PickupParticlesDestruction.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="36" Column="24" />
       <File FileName="Assets/Scripts/FollowCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FlyMovement.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/FlyMovement.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FlyPickup.cs" Line="15" Column="71" />
+      <File FileName="Assets/Scripts/PickupParticlesDestruction.cs" Line="8" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
