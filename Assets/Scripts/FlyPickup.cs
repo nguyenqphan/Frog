@@ -3,13 +3,12 @@ using System.Collections;
 
 public class FlyPickup : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	void OnTriggerEnter(Collider other){
+
+		//if the collider other is tagged with "Player"..
+		if (other.CompareTag("Player")) {
+
+			Destroy(gameObject);
+		}
+	}	
 }
