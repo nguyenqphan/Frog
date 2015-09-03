@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour {
 	private Vector3 movement;
 	private float turningSpeed = 20f;
 	private Rigidbody playerRigibbody;
+	[SerializeField]
+	private RandomSoundPlayer playerFootsteps;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour {
 		//if the player's movement vector does not equal Zero...
 		if (movement != Vector3.zero) {
 
+
 			//...then create a target rotation base on the movement vertoc...
 			Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.up);
 
@@ -43,9 +46,14 @@ public class PlayerMovement : MonoBehaviour {
 
 			//...then play the jump animation
 			playerAnimator.SetFloat ("Speed", 3f);
+
+			//...play footstep sounds.
+			playerFootsteps.enabled = true;
 		} else {
 			//otherwise, dont jump
 			playerAnimator.SetFloat("Speed", 0f);
+			//don't play footstep sound.
+			playerFootsteps.enabled = false;
 		}
 	}
 }
